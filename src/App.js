@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: true });
+    }, []);
+
+    return (
+        <div className="App">
+            <Navbar />
+            <section id="about" data-aos="fade-up"><About /></section>
+            <section id="skills" data-aos="fade-up"><Skills /></section>
+            <section id="projects" data-aos="fade-up"><Projects /></section>
+            <section id="education" data-aos="fade-up"><Education /></section>
+            <section id="contact" data-aos="fade-up"><Contact /></section>
+            <footer>© 2025 Himani Shah | Built with ❤️ using React</footer>
+        </div>
+    );
 }
 
 export default App;
