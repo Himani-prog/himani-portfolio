@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import ParticlesBackground from "./components/ParticlesBackground";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -16,6 +17,7 @@ function App() {
 
     return (
         <div className="App">
+            <ParticlesBackground />
             <Navbar />
             <section id="about" data-aos="fade-up"><About /></section>
             <section id="skills" data-aos="fade-up"><Skills /></section>
