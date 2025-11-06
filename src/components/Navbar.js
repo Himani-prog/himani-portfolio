@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Navbar() {
     return (
@@ -12,6 +13,27 @@ export default function Navbar() {
                 <li><Link to="education" smooth duration={600}>Education</Link></li>
                 <li><Link to="contact" smooth duration={600}>Contact</Link></li>
             </ul>
+
+            <div className="nav-icons">
+                <a
+                    href="https://linkedin.com/in/himani-shah"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <FaLinkedin />
+                </a>
+                <a
+                    href="https://github.com/himani48"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <FaGithub />
+                </a>
+
+                <a href="/Himani_Shah_Resume_Junior_Developer.pdf" download className="resume-btn">
+                    Resume
+                </a>
+            </div>
         </nav>
     );
 }
