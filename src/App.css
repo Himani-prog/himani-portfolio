@@ -125,14 +125,114 @@ h2 {
     box-shadow: 0 5px 18px rgba(255, 150, 200, 0.25);
 }
 
-#tsparticles {
-    opacity: 0.7;
-    filter: blur(0.5px);
-}
-
 footer {
     text-align: center;
     padding: 30px 0;
     color: #555;
     font-size: 14px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff3f8, #ffe4b5);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 40px 60px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(255, 150, 200, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+.hero-name {
+    font-size: 3.2rem;
+    background: linear-gradient(90deg, #ff4b8b, #ffbb33);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.hero-tagline {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 20px 0 30px;
+}
+
+.hero-button {
+    background: linear-gradient(90deg, #ff4b8b, #ffbb33);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: linear-gradient(90deg, #ffbb33, #ff4b8b);
+    box-shadow: 0 4px 18px rgba(255, 150, 200, 0.4);
+}
+
+
+
+/* additional styles for components */
+.brand-section {
+    margin: 36px 0;
+    padding: 22px;
+}
+
+.small {
+    font-size: 13px;
+    color: #666;
+}
+
+/* tech pill inside projects */
+.tech-pill {
+    padding: 6px 8px;
+    border-radius: 999px;
+    background: rgba(255, 75, 139, 0.06);
+    border: 1px solid rgba(255, 187, 51, 0.06);
+    color: #333;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* testimonial card */
+.testimonial-card {}
+
+/* inputs */
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: #fff;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+/* responsive tweaks */
+@media (max-width:760px) {
+    .hero-content {
+        padding: 24px;
+    }
 }

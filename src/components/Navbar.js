@@ -16,14 +16,14 @@ export default function Navbar() {
 
             <div className="nav-icons">
                 <a
-                    href="https://linkedin.com/in/himani-shah"
+                    href="https://linkedin.com/in/himanishah-it"
                     target="_blank"
                     rel="noreferrer"
                 >
                     <FaLinkedin />
                 </a>
                 <a
-                    href="https://github.com/himani48"
+                    href="https://github.com/Himani-Prog"
                     target="_blank"
                     rel="noreferrer"
                 >
